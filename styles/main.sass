@@ -1,0 +1,28 @@
+$bgcolor: lightblue
+$textcolor: black
+$fontsize: 18px
+
+/* Use the variables */
+body
+    background-color: $bgcolor
+    color: $textcolor
+    font-size: $fontsize
+
+@mixin wrapper
+    padding: 15px
+    margin-bottom: 15px
+    background-color: white
+    h1
+        font-size: 18px
+
+.main-center
+    padding: 20px 10px
+
+.main-right
+    padding: 20px 10px
+
+.rightside
+    @include wrapper
+
+.article
+    @include wrapper
