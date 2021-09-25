@@ -16,13 +16,13 @@
 
 
 <body> 
-    <!-- Modelo de Nav -->
+    <!-- Modelo de Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container-fluid">
           <!-- Nome principal -->
           <a class="navbar-brand" href="#">Prateleira de Mídias</a>
           <!-- Botão para acesso pelo celular -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -36,7 +36,7 @@
 
               <!-- Lista de Outras Páginas -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Explorar
                 </a>
 
@@ -63,15 +63,15 @@
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  Gêneros
+                  Plataforma
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Recomendações personalizadas</a></li>
-                  <li><a class="dropdown-item" href="#">Amados pela crítica!</a></li>
-                  <li><a class="dropdown-item" href="#">Os mais assistidos</a></li>
-                  <li><a class="dropdown-item" href="#">Só pra curtir</a></li>
-                  <li><a class="dropdown-item" href="#">Barra pesada</a></li>
+                  <li><a class="dropdown-item" href="#">PC</a></li>
+                  <li><a class="dropdown-item" href="#">Playstation</a></li>
+                  <li><a class="dropdown-item" href="#">XBOX</a></li>
+                  <li><a class="dropdown-item" href="#">Nintendo</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile</a></li>
                 </ul> 
               </li>
             </ul>
@@ -90,9 +90,9 @@
 
 
       <div class="container-fluid gx-5">
-        <!-- Indica o comportamento das divisórias a seguir, elas ocuparão uma "linha" de seu contêiner -->
         <div class="row">
-        <!-- Divisória main-center determina a "proporção" (8 de 12) do espaço vertical da página que os contêiners irão ocupar -->
+        <!-- Divisória main-center determina a "proporção" (4 de 12) do espaço vertical 
+          da página que os contêiners irão ocupar -->
         <div class="main-center col-md-4">
         <div class="article">
           <h2>Em Alta</h2>
@@ -101,28 +101,33 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png" class="img-fluid rounded-start img-card" alt="...">
+                <!-- Classe img-card foi criada para formatar a imagem da maneira certa -->
+                <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png" class="img-fluid rounded-start img-card" >
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Celeste</h5>
                   <p class="card-text">
+                    <!-- Uso do Bootstrap Icons para mostrar a nota média da obra no site -->
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-half"></i>
                   </p>
+                  <!-- Sinopse da obra, "text-ellipsis" controla o numero de linhas máximo que a caixa de texto terá -->
                   <p class="card-text text-ellipsis-4">Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight platformer from the creators of TowerFall. Brave hundreds of hand-crafted challenges, uncover devious secrets, and piece together the mystery of the mountain.</p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Final da estrutura básica da card, que será repetida para cada uma -->
           
+          <!-- Cópia de card -->
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1150690/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+                <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1150690/library_600x900.jpg" class="img-fluid rounded-start img-card" >
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -140,11 +145,13 @@
               </div>
             </div>
           </div>
+          <!-- Final da estrutura básica da card, que será repetida para cada uma -->
 
+          <!-- Cópia de card -->
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://steamcdn-a.akamaihd.net/steam/apps/391540/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+                <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/391540/library_600x900.jpg" class="img-fluid rounded-start img-card" >
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -162,11 +169,13 @@
               </div>
             </div>
           </div>
+          <!-- Final da estrutura básica da card, que será repetida para cada uma -->
 
+          <!-- Cópia de card -->
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://i.imgur.com/Lh7vqLN.jpg" class="img-fluid rounded-start img-card" alt="...">
+                <img alt="Can't load the image" src="https://i.imgur.com/Lh7vqLN.jpg" class="img-fluid rounded-start img-card" >
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -184,11 +193,13 @@
               </div>
             </div>
           </div>
+          <!-- Final da estrutura básica da card, que será repetida para cada uma -->
 
+          <!-- Cópia de card -->
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="https://steamcdn-a.akamaihd.net/steam/apps/367520/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+                <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/367520/library_600x900.jpg" class="img-fluid rounded-start img-card" >
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -206,7 +217,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Final da estrutura básica da card, que será repetida para cada uma -->
 
 
 
@@ -215,76 +226,100 @@
 
       <!-- Bloco da direita, ocupa 2/3 da tela -->
       <div class="main-right col-md-8">
-        <div class="article">
+        <div class="article carousel-padding">
           <!-- Carrossel de múltiplos items que utiliza javascript -->
-            <h2>Recomendados</h2>
-            <div class="container text-center my-3">
-            <div class="row mx-auto my-auto justify-content-center">
-
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="container text-left my-2">
+              <h2 class="carousel-header">&nbsp;&nbsp;Recomendações só pra você</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+                <!-- OBS: Classes "c-1" e "ci-1" foram criadas para ajudar na segregação dos diferentes carrosseis no javascript, para que imagens não se misturem -->
+                <div id="recipeCarousel" class="carousel slide c-1" data-bs-ride="c-1">
                     <div class="carousel-inner" role="listbox">
-
-                        <div class="carousel-item active gx-5">
-                            <div class="col-md-3">
-                                <div class="card gx-5">
-                                    <div class="card-img gx-5">
-                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/435150/capsule_616x353.jpg?t=1607718127" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item gx-5">
-                            <div class="col-md-3">
-                                <div class="card gx-5">
-                                    <div class="card-img gx-5">
-                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1113000/capsule_616x353.jpg?t=1612959923" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item gx-5">
-                            <div class="col-md-3">
-                                <div class="card gx-5">
-                                    <div class="card-img gx-5">
-                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/251150/capsule_616x353.jpg?t=1598571543" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="col-md-3">
+                      
+                      <!-- Estrutura de cada imagem do carrossel, que será repetida para cada item -->
+                        <div class="carousel-item active ci-1">
+                            <div class="col-md-2">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1668520/capsule_616x353.jpg?t=1624603988" class="img-fluid">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/435150/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Fim da estrutura do carrossel -->
+
+                        <div class="carousel-item ci-1">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1113000/library_600x900.jpg" class="img-fluid carousel-img">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="carousel-item">
-                            <div class="col-md-3">
+                        <div class="carousel-item ci-1">
+                            <div class="col-md-2">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/6743820/56988d582189415998383d889bff4edd5b49b1c7.png" class="img-fluid">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/251150/library_600x900.jpg" class="img-fluid carousel-img">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="carousel-item">
-                            <div class="col-md-3">
+                        <div class="carousel-item ci-1">
+                            <div class="col-md-2">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="https://manualdosgames.com/wp-content/uploads/2020/05/Civilization-VI.png" class="img-fluid">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1668520/library_600x900.jpg" class="img-fluid carousel-img">
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="carousel-item ci-1">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1086940/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-1">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/289070/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-1">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/632470/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                      <div class="carousel-item ci-1">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/412830/library_600x900.jpg" class="img-fluid carousel-img">
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                      <!-- Fim da estrutura do carrossel -->
 
                     </div>
+
                     <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -295,7 +330,423 @@
                     </a>
                     
                 </div>
+              </div>
             </div>
+          <!-- Fim da estrutura do carrossel que será repitida para os outros -->
+
+          <!-- Começo da estrutura do carrossel -->
+            <div class="container text-left my-2">
+              <h2 class="carousel-header">&nbsp;&nbsp;Amados pela crítica</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+
+                <div id="recipeCarousel2" class="carousel slide c-2" data-bs-ride="c-2">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active ci-2">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://i.imgur.com/Lh7vqLN.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/367520/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/303310/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/774181/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/362890/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/620/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/391540/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-2">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/460950/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel2" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                  
+              </div>
+            </div>
+            </div>
+          <!-- Fim da estrutura do carrossel -->
+          
+          <!-- Começo da estrutura do carrossel -->
+            <div class="container text-left my-2">
+              <h2 class="carousel-header">&nbsp;&nbsp;Os mais jogados</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+
+                <div id="recipeCarousel3" class="carousel slide c-3" data-bs-ride="c-3">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active ci-3">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/271590/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/39210/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/730/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/570/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/578080/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1172470/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/252950/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-3">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1454400/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel3" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                  
+              </div>
+            </div>
+            </div>
+          <!-- Fim da estrutura do carrossel -->
+
+          <!-- Começo da estrutura do carrossel -->
+            <div class="container text-left my-2">
+              <h2 class="carousel-header">&nbsp;&nbsp;Só pra curtir</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+
+                <div id="recipeCarousel4" class="carousel slide c-4" data-bs-ride="c-4">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active ci-4">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/728880/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/880940/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1005300/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/341800/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/386940/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/4000/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1097150/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-4">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/945360/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel4" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel4" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                  
+              </div>
+            </div>
+            </div>
+          <!-- Fim da estrutura do carrossel -->
+
+          <!-- Começo da estrutura do carrossel -->
+            <div class="container text-left my-2">
+              <h2 class="carousel-header">&nbsp;&nbsp;Trama cativante</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+
+                <div id="recipeCarousel5" class="carousel slide c-5" data-bs-ride="c-5">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active ci-5">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/292030/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/303310/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/1111380/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/638970/library_600x900.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img alt="Can't load the image" src="https://www.mobygames.com/images/covers/l/636447-persona-5-royal-playstation-4-front-cover.jpg" class="img-fluid carousel-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/257510/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/7670/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item ci-5">
+                          <div class="col-md-2">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img alt="Can't load the image" src="https://steamcdn-a.akamaihd.net/steam/apps/435150/library_600x900.jpg" class="img-fluid carousel-img">
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel5" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel5" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                  
+              </div>
+            </div>
+            </div>
+          <!-- Fim da estrutura do carrossel -->
+
+          
         </div>
         
         
