@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ícones do Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Nosso CSS (SASS) -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Minha Prateleira de Mídias</title>
+</head>
+
+
+
+<body> 
+    <!-- Modelo de Nav -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <!-- Nome principal -->
+          <a class="navbar-brand" href="#">Prateleira de Mídias</a>
+          <!-- Botão para acesso pelo celular -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Barra de navegação -->
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Minha Estante</a>
+              </li>
+
+              <!-- Lista de Outras Páginas -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explorar
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Animes</a></li>
+                  <li><a class="dropdown-item" href="#">Filmes</a></li>
+                  <li><a class="dropdown-item" href="#">Livros</a></li>
+                  <li><a class="dropdown-item" href="#">Jogos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Top 20</a></li>
+                </ul>
+
+              </li>
+            </ul>
+     
+            <!-- Nome da página atual -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <span class="navbar-brand mb-0 h2">Jogos</span>
+              </li>
+            </ul>
+
+            <!-- Escolha de categorias -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Gêneros
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Recomendações personalizadas</a></li>
+                  <li><a class="dropdown-item" href="#">Amados pela crítica!</a></li>
+                  <li><a class="dropdown-item" href="#">Os mais assistidos</a></li>
+                  <li><a class="dropdown-item" href="#">Só pra curtir</a></li>
+                  <li><a class="dropdown-item" href="#">Barra pesada</a></li>
+                </ul> 
+              </li>
+            </ul>
+            
+
+
+            <!-- Barra de pesquisas -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar jogos" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><span class="bi bi-search"></span></button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid gx-5">
+        <!-- Indica o comportamento das divisórias a seguir, elas ocuparão uma "linha" de seu contêiner -->
+        <div class="row">
+        <!-- Divisória main-center determina a "proporção" (8 de 12) do espaço vertical da página que os contêiners irão ocupar -->
+        <div class="main-center col-md-4">
+        <div class="article">
+          <h2>Em Alta</h2>
+
+          <!-- "Cards" que representam os conteúdos no em alta -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png" class="img-fluid rounded-start img-card" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Celeste</h5>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="card-text text-ellipsis-4">Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight platformer from the creators of TowerFall. Brave hundreds of hand-crafted challenges, uncover devious secrets, and piece together the mystery of the mountain.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1150690/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">OMORI</h5>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </p>
+                  <p class="card-text text-ellipsis-4">Explore a strange world full of colorful friends and foes. When the time comes, the path you’ve chosen will determine your fate... and perhaps the fate of others as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/391540/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Undertale</h5>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p class="card-text text-ellipsis-4">UNDERTALE! The RPG game where you don't have to destroy anyone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.imgur.com/Lh7vqLN.jpg" class="img-fluid rounded-start img-card" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Final Fantasy XIV: Shadowbringers</h5>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p class="card-text text-ellipsis-4">Take part of the critically acclaimed FINAL FANTASY XIV Online saga with the next expansion pack SHADOWBRINGERS!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/367520/library_600x900.jpg" class="img-fluid rounded-start img-card" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Hollow Knight</h5>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </p>
+                  <p class="card-text text-ellipsis-4">Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!-- Bloco da direita, ocupa 2/3 da tela -->
+      <div class="main-right col-md-8">
+        <div class="article">
+          <!-- Carrossel de múltiplos items que utiliza javascript -->
+            <h2>Recomendados</h2>
+            <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active gx-5">
+                            <div class="col-md-3">
+                                <div class="card gx-5">
+                                    <div class="card-img gx-5">
+                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/435150/capsule_616x353.jpg?t=1607718127" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item gx-5">
+                            <div class="col-md-3">
+                                <div class="card gx-5">
+                                    <div class="card-img gx-5">
+                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1113000/capsule_616x353.jpg?t=1612959923" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item gx-5">
+                            <div class="col-md-3">
+                                <div class="card gx-5">
+                                    <div class="card-img gx-5">
+                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/251150/capsule_616x353.jpg?t=1598571543" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1668520/capsule_616x353.jpg?t=1624603988" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/6743820/56988d582189415998383d889bff4edd5b49b1c7.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://manualdosgames.com/wp-content/uploads/2020/05/Civilization-VI.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+<script src="teste.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+
+</html>
