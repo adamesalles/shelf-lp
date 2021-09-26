@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Use the variables */
 body {
   background-color: #0d0221;
@@ -107,6 +108,7 @@ div.card p {
   white-space: normal;
 }
 
+/* Carrosel próprio do home, que é sempre de 100% */
 @media (max-width: 1000px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -126,12 +128,12 @@ div.card p {
 @media (min-width: 200px) {
   .carousel-inner .carousel-item-end.active,
 .carousel-inner .carousel-item-next {
-    transform: translateX(16.5%);
+    transform: translateX(100%);
   }
 
   .carousel-inner .carousel-item-start.active,
 .carousel-inner .carousel-item-prev {
-    transform: translateX(-16.5%);
+    transform: translateX(-100%);
   }
 }
 .carousel-inner .carousel-item-end,
@@ -147,13 +149,8 @@ div.card p {
   padding-top: 0.2vw;
 }
 
-.single-carousel .carousel-inner .carousel-item-end.active,
-.single-carousel .carousel-inner .carousel-item-next {
-  transform: translateX(0%);
-}
-.single-carousel .carousel-inner .carousel-item-start.active,
-.single-carousel .carousel-inner .carousel-item-prev {
-  transform: translateX(0%);
+.carousel-header {
+  color: #887bb0;
 }
 
-/*# sourceMappingURL=medias.css.map */
+/*# sourceMappingURL=home.css.map */
