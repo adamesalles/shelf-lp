@@ -1,22 +1,11 @@
-// Apenas para testes
+@use 'main'
 
-$bgcolor: lightblue
-$textcolor: black
-$fontsize: 18px
-
-/* Use the variables */
-body
-    background-color: $bgcolor
-    color: $textcolor
-    font-size: $fontsize
-
-// Mais utilizado no main.sass (tipo POO)
 @mixin wrapper
     padding: 15px
     margin-bottom: 15px
     background-color: white
     h2
-        font-size: 21px
+        font-size: 18px
 
 // Minhas tentativas de fazer o heatmap responsivo
 #heatmap
@@ -82,24 +71,8 @@ body
     font-weight: bold
     font-size: vmin(3vh,1.7vw)
 
-.main-center
-    padding: 20px 10px
-
-.main-right
-    padding: 20px 10px
-
-.rightside
-    @include wrapper
-
 .profile
-    @include wrapper
-    img
-        width: 80%
-        border: 5px solid #555
-        display: block
-        margin-left: auto
-        margin-right: auto
-        margin-bottom: 10px
+    @include main.wrapper
     h2
         font-size: 30px
         text-align: center
@@ -108,3 +81,22 @@ body
     p
         font-size: 14px
         margin-bottom: 10px
+
+#friends
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+        margin-left: auto
+        margin-right: auto
+    .row
+        margin-bottom: 20px
+
+#prof-pic
+    width: 80%
+    border: 5px solid #555
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px

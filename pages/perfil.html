@@ -77,7 +77,7 @@
         <div class="profile">
             <h2>@tio.rafa</h2>
             
-            <img class='d-flex' src="https://t2.os.ltmcdn.com/pt/posts/9/8/6/dedo_polegar_mexendo_sozinho_causas_689_600.jpg" alt="Tio Rafa Picture">
+            <img id='prof-pic' class='d-flex' src="https://t2.os.ltmcdn.com/pt/posts/9/8/6/dedo_polegar_mexendo_sozinho_causas_689_600.jpg" alt="Tio Rafa Picture">
             
             <ul class="list-group">
                 <li class="list-group-item"><span class="bi-person-circle"></span> Rafael de Pinho</li>
@@ -125,11 +125,27 @@
             </div>
               
             <hr class="border-5 border-top">
-            <h3>Minha atividade</h3>
-
+            <h3>Meus amigos</h3>
             
+            <div id="friends">
+              <div class="row">
+                <div class="col-md-4"><img src="https://avatars.githubusercontent.com/u/81707790?v=4" alt="Carol"></div>
+                <div class="col-md-4"><img src="https://avatars.githubusercontent.com/u/57806047?v=4" alt="Eduardo"></div>
+                <div class="col-md-4"><img src="https://instagram.fsdu3-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/193234477_486342925755272_5840981023915285158_n.jpg?_nc_ht=instagram.fsdu3-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=jvtgIk_OQnYAX9clb4S&edm=AP_V10EBAAAA&ccb=7-4&oh=27ce3ef06f9526fb543d6cd4d71e0c0e&oe=615637F7&_nc_sid=4f375e" alt="Tiago"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGJld7T3l9Iw/profile-displayphoto-shrink_800_800/0/1623077130234?e=1638403200&v=beta&t=hMLoosBOimwC0vC5xBzhoTOgEyNTtw1j9bJUdatVH50" alt="Eduardo"></div>
+                <div class="col-md-4"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGJld7T3l9Iw/profile-displayphoto-shrink_800_800/0/1623077130234?e=1638403200&v=beta&t=hMLoosBOimwC0vC5xBzhoTOgEyNTtw1j9bJUdatVH50" alt="Eduardo"></div>
+                <div class="col-md-4"><img src="https://media-exp1.licdn.com/dms/image/C4D03AQEbQNedk-9Ijg/profile-displayphoto-shrink_800_800/0/1517393503602?e=1638403200&v=beta&t=iwhbXSDp3Gl1OWR9sAT3S9D8aynzZ-RWbqeKtcr_wmY" alt="Yuri"></div>
+            </div>
 
+            </div>
+            
+            <hr class="border-5 border-top">
+            <h3>Minha atividade</h3>
+            
             <div id="heatmap"></div>
+            
         </div>    
         </div>
         
@@ -156,13 +172,21 @@
                 <label class="btn btn-outline-primary" for="jogoCheck">Jogos</label> 
             </form>
             <!-- Será preenchido pelo JS. -->
-            <div id="grid-container">
-
-            </div>
+            <div id="grid-container"></div>
             </div>
             </div>
         </div>
         </div>
+        <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright and Social-->
+          <div class="text-dark text-center p-3">
+              2021 - Carol Erthal - Eduardo Adame - Tiago Barradas - Rodrigo Pintucci - Vinicius Hedler
+                <a href="https://github.com/reneroliveira" class="fa fa-lg fa-github"></a> 
+                <a href="https://www.linkedin.com/in/reneroliv/" class="fa fa-lg fa-linkedin"></a>      
+                <a href="mailto:rener.oliveira@fgv.edu.br" class="fa fa-lg fa-envelope"></a>
+          </div>
+          <!-- Copyright and Social-->
+        </footer>
 
 
 <script>
@@ -193,7 +217,7 @@
 
 
     // Array de objetos com alguns works
-    let works = [{'name': 'Koe no Kaitachi', 'pic':'https://www.intoxianime.com/wp-content/uploads/2016/09/silent-voice-new-visual.png.jpg','type': 'anime'},{'name': 'The Joker \n 78%', 'pic':'https://3jm17k957xm280ka42nsilm6-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/The-Joker-DVD-and-Blu-ray-cover-art.jpg','type': 'filme'}, {'name': 'Forza Horizon 4', 'pic':'https://store-images.s-microsoft.com/image/apps.36093.14339303838396367.725ab8dd-f8b7-4a29-a351-45ebd5d66edd.ba2a2523-7f32-4f92-a83d-26097b7b6ca1?mode=scale&q=90&h=300&w=200','type': 'jogo'}, {'name': 'Diário de um Banana', 'pic':'https://m.media-amazon.com/images/I/51NmVKrbhAL.jpg', 'type': 'livro'}]
+    let works = [{'name': 'Koe no Katachi', 'pic':'https://www.intoxianime.com/wp-content/uploads/2016/09/silent-voice-new-visual.png.jpg','type': 'anime'},{'name': 'The Joker', 'pic':'https://3jm17k957xm280ka42nsilm6-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/The-Joker-DVD-and-Blu-ray-cover-art.jpg','type': 'filme'}, {'name': 'Forza Horizon 4', 'pic':'https://store-images.s-microsoft.com/image/apps.36093.14339303838396367.725ab8dd-f8b7-4a29-a351-45ebd5d66edd.ba2a2523-7f32-4f92-a83d-26097b7b6ca1?mode=scale&q=90&h=300&w=200','type': 'jogo'}, {'name': 'Diário de um Banana', 'pic':'https://m.media-amazon.com/images/I/51NmVKrbhAL.jpg', 'type': 'livro'}]
 
 
     // Faz com que cada botão, ao ser clicado, chame a função para alterar o filtro
