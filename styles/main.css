@@ -64,18 +64,6 @@ div.card p {
   margin-bottom: 0.3vw;
 }
 
-.carousel-header {
-  margin-left: 2.5vw;
-}
-
-.carousel-img {
-  width: 100%;
-}
-
-.carousel-padding {
-  padding-top: 0.5vw;
-}
-
 .text-ellipsis-3 {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -129,5 +117,14 @@ div.card p {
 .carousel-inner .carousel-item-start {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+
+.carousel-img {
+  width: 100%;
+}
+
+.carousel-padding {
+  padding-top: 0.2vw;
 }
 /*# sourceMappingURL=main.css.map */
