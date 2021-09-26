@@ -1,0 +1,108 @@
+/* _(:.3 J L)_*/
+/* Use the variables */
+body {
+  background-color: #413651;
+  color: black;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.main-center {
+  padding: 20px 10px;
+}
+
+.main-right {
+  padding: 20px 10px;
+}
+
+.rightside {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+  border-radius: 10px;
+}
+
+.article {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+  border-radius: 10px;
+}
+
+.mostrar {
+  width: 525px;
+  height: 225px;
+  text-align: center;
+}
+
+.direita {
+  align: right;
+}
+
+div.fillall {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  min-height: 50px;
+}
+
+footer {
+  min-height: 50px;
+}
+
+/* Trick */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #887bb0;
+}
+
+.antileft {
+  width: 244px;
+  height: 483px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  background-color: #887bb0;
+}
+
+.btn-primary {
+  background-color: #413651;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0d0221;
+}
+
+input[type="checkbox"] {
+  -webkit-filter: hue-rotate(48deg) brightness(1.1);
+          filter: hue-rotate(48deg) brightness(1.1);
+}
+/*# sourceMappingURL=main.css.map */

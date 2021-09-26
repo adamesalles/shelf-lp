@@ -1,0 +1,98 @@
+$dark_purple: #0d0221
+$light_purple: #887bb0
+$gray_purple: #413651
+$white: snow
+$body_fontsize: 18px
+$body_font_family: 'Roboto'
+$wrapper_radius: 10px
+$card_bgcolor: #413651
+$card_textcolor: snow
+$img_card_radius: 10px
+$textcolor: black
+$fontsize: 18px
+/* _(:.3 J L)_*/
+/* Use the variables */
+body
+    background-color: $gray_purple
+    color: $textcolor
+    font-size: $fontsize
+
+@mixin wrapper
+    padding: 15px
+    margin-bottom: 15px
+    background-color: $light_purple
+    border-radius: $wrapper_radius
+h2
+    font-size: 18px
+
+.main-center
+    padding: 20px 10px
+
+.main-right
+    padding: 20px 10px
+
+.rightside
+    @include wrapper
+
+.article
+    @include wrapper
+
+.mostrar
+    width: 525px
+    height: 225px
+    text-align: center
+
+.direita
+    align: right
+
+.container-fluid
+    background-color:rgb(136,123,176)
+
+
+
+div.fillall
+    width: 100%
+    padding-left: 0px
+    padding-right: 0px
+    position: absolute
+    bottom: 0px
+
+body 
+    height: 100vh
+    margin: 0
+
+header
+    min-height: 50px
+
+footer
+    min-height: 50px
+
+/* Trick */
+body
+  display: flex
+  flex-direction: column
+
+footer
+  margin-top: auto
+  background-color: $light_purple
+
+.antileft
+    width: 244px
+    height: 483px
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 20px
+    padding-bottom: 20px
+
+nav
+    background-color: $light_purple
+
+.btn-primary
+    background-color: $gray_purple
+    border: none
+
+.btn-primary:hover
+    background-color: $dark_purple
+
+input[type="checkbox"]
+  filter:  hue-rotate(48deg) brightness(1.1)
