@@ -165,6 +165,10 @@ div.card p {
   border: none;
 }
 
+.tentacle {
+  width: 100%;
+}
+
 .card {
   background-color: #85d2d0;
   margin: 5px;
