@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Nosso CSS (SASS) -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Minha Prateleira de Mídias</title>
 </head>
 
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container-fluid">
           <!-- Nome principal -->
-          <a class="navbar-brand" href="#">Prateleira de Mídias</a>
+          <a class="navbar-brand" href="../index.html">Prateleira de Mídias</a>
           <!-- Botão para acesso pelo celular -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--Define a parte esquerda do nav-->
               <!-- Página Ativa -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Minha Estante</a>
+                <a class="nav-link" href="profile.html">Minha Estante</a>
               </li>
 
               <!-- Dropdown por entretenimento -->
@@ -45,12 +42,14 @@
                 </a>
                 <!-- Lista por gênero -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Animes</a></li>
-                  <li><a class="dropdown-item" href="#">Filmes</a></li>
-                  <li><a class="dropdown-item" href="#">Livros</a></li>
-                  <li><a class="dropdown-item" href="#">Jogos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Top 20</a></li>
+                    <li><a class="dropdown-item" href="animes.html">Animes</a></li>
+                    <li><a class="dropdown-item" href="movies.html">Filmes</a></li>
+                    <li><a class="dropdown-item" href="#">Livros</a></li>
+                    <li><a class="dropdown-item" href="games.html">Jogos</a></li>
+                    <li><a class="dropdown-item" href="series.html">Series</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Top 20</a></li>
+                    <li><a class="dropdown-item" href="../sobre.html">Sobre</a></li>
                 </ul>
 
               </li>
@@ -62,7 +61,7 @@
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--Define a parte direita do nav, particular de cada entretenimento-->
               <li class="nav-item">
-                <span class="navbar-brand mb-0 h2">Séries</span>
+                <span class="navbar-brand mb-0 h2">Livro</span>
               </li>
             </ul>
 
@@ -75,10 +74,10 @@
                   <!-- Lista para subdivisão por gênero -->
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Aventura</a></li>
-                    <li><a class="dropdown-item" href="#">Documentário</a></li>
-                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                    <li><a class="dropdown-item" href="#">Sitcom</a></li>
-                    <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    <li><a class="dropdown-item" href="#">Distopia</a></li>
+                    <li><a class="dropdown-item" href="#">Clássicos</a></li>
+                    <li><a class="dropdown-item" href="#">Ficção</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
                   </ul> 
                 </li>
               </ul>
@@ -109,22 +108,22 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <!-- Adiciona a imagem do card, adaptando-o ao card -->
-                  <img alt="Can't load the image" src="https://br.web.img3.acsta.net/c_310_420/pictures/210/609/21060989_20131126123652773.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
+                  <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51DgYTEd49L.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
                 </div>
                 <!-- Texto de descrição, inclusive posicionamento -->
                 <div class="col-md-8">
                   <div class="card-body ">
-                    <h5 class="card-title">How I Met Your Mother</h5>
+                    <h5 class="card-title">Harry Potter e a Pedra Filosofal</h5>
                     <p class="card-text">
                     <!-- Ícones de estrela do bootstrap -->
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
                     </p>
                     <!-- Texto que é interrompido após 3 linhas -->
-                    <p class="card-text text-ellipsis-4"> Em 2030, o arquiteto Ted Mosby (Josh Radnor) conta a história sobre como conheceu a mãe dos seus filhos. Ele volta no tempo para 2005, relembrando suas aventuras amorosas em Nova York e a busca pela mulher dos seus sonhos. </p>
+                    <p class="card-text text-ellipsis-3"> J.K. Rowling. Conta a história de Harry Potter, um órfão criado pelos tios que descobre, em seu décimo primeiro aniversário, que é um bruxo. </p>
                   </div>
                 </div>
               </div>
@@ -134,18 +133,18 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
+                  <img alt="Can't load the image" src="https://blog.estantevirtual.com.br/wp-content/uploads/medium_1652-205x300.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title"> Brooklyn 99 </h5>
+                    <h5 class="card-title">a máquina de fazer espanhóis</h5>
                     <p class="card-text">
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i></p>
-                      <p class="card-text text-ellipsis-4"> Jake Peralta é um detetive brilhante e ao mesmo tempo imaturo, que nunca precisou se preocupar em respeitar as regras. Tudo muda quando um capitão exigente assume o comando de seu esquadrão e Jake deve aprender a trabalhar em equipe. </p>
+                      <i class="bi bi-star-fill"></i></p>
+                      <p class="card-text text-ellipsis-3"> Válter Hugo Mãe. Surpreendente retrato da vida dos velhos, este livro fala intimamente dos fantasmas da portugalidade e da candura que, afinal, existe mesmo nos momentos mais tristes. </p>
                   </div>
                 </div>
               </div>
@@ -154,41 +153,41 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/18/01/26/18/25/0046343.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
+                  <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/519FcGp1vVL.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">One Day at a Time</h5>
+                    <h5 class="card-title">Como morrem os pobres e outros ensaios</h5>
+                    <p class="card-text">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </p>
+                    <p class="card-text text-ellipsis-3"> George Orwell. Relato anedótico de suas experiências em um hospital público francês que desencadeia uma contemplação da literatura hospitalar no contexto da medicina do século XIX. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/511VQoE7CXL.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Orgulho e Preconceito</h5>
                     <p class="card-text">
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-half"></i>
                       <i class="bi bi-star"></i>
-                    </p>
-                    <p class="card-text text-ellipsis-4"> Na nova versão do clássico da TV sobre uma família de imigrantes cubanos, a mãe recém-divorciada e a avó careta criam uma adolescente e um pré-adolescente. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/19/12/20/21/27/3055482.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">FRIENDS</h5>
-                    <p class="card-text">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
                     </p>
                       <!-- Corta em 4 linhas -->
-                      <p class="card-text text-ellipsis-4"> Seis amigos enfrentam a vida e os amores em Nova York e adoram passar o tempo livre na cafeteria Central Perk. </p>
+                      <p class="card-text text-ellipsis-4"> Jane Austen. Clássico da literatura inglesa que critica a sociedade burguesa inglesa da época pelas relações ocasionadas pelo amor e dinheiro. </p>
                   </div>
                 </div>
               </div>
@@ -197,11 +196,11 @@
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img alt="Can't load the image" src="https://cdn.fstatic.com/media/movies/covers/2011/11/231ef478c7f02362d227854b25960dfc.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
+                  <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51UeRqYVQ4L.jpg" class="img-fluid rounded-start img-card" width="500" height="500">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Arrested Development</h5>
+                    <h5 class="card-title">O palácio de inverno</h5>
                     <p class="card-text">
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star-fill"></i>
@@ -209,7 +208,7 @@
                       <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star"></i>
                     </p>
-                      <p class="card-text text-ellipsis-4"> A história de Arrested Development é muito simples: um pai viúvo chamado Michael Bluth, cujo pai George Bluth foi preso por forjar a contabilidade das empresas Bluth, acaba tendo que cuidar de sua ex-rica família.  </p>
+                      <p class="card-text text-ellipsis-4"> John Boyne. De forma não-linear, o romance conta a história de Georgy que, às vésperas da Revolução Russa salva a vida do Czar por acidente, e torna-se  guarda-costas do filho caçula do czar Nicolau. </p>
                   </div>
                 </div>
               </div>
@@ -236,7 +235,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/79/The_Good_Place_temporada_1.jpg/200px-The_Good_Place_temporada_1.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/9788537817520_gg.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -247,7 +246,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/62/Grey%27s_Anatomy_temporada_12.jpg/250px-Grey%27s_Anatomy_temporada_12.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/91xv9v926RL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -257,7 +256,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://assets0.minhaserie.com.br/uploads/editor_pictures/000/075/611/content_pic.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51OoTRAChFL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -267,7 +266,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://infinitasvidas.files.wordpress.com/2018/10/poster-sherlock.png?w=640" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/81rqjb5EIdL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -277,7 +276,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://s2.glbimg.com/cSyRrIUB7JtCYb6KtXk8-WBv2Mg=/362x536/https://s2.glbimg.com/eK5tsIx1yoXYyPUdt1LJc4J9G1Y=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/5/J/88CLA0SvGbrstmV3S3SA/2020-1196-modern-family-11t-poster.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images.tcdn.com.br/img/img_prod/783226/o_cortico_1121_1_20200630195349.png" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -287,7 +286,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/e/e2/The-Crown-Poster-S2.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="http://s3.amazonaws.com/cdn.globolivros.com.br/livros/2410/medium_2410.jpg?1614980436" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -297,7 +296,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://br.web.img2.acsta.net/pictures/17/04/10/16/46/409558.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51RzF19sb6L.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -307,7 +306,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://br.web.img2.acsta.net/pictures/20/02/14/05/33/1999850.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/410X4mW-n1L.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -336,7 +335,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/81R7QZV5P1L._AC_SY445_.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51E9GHXUc+L.jpg" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -346,7 +345,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://woomagazine.com.br/wp-content/uploads/2018/02/28238361_963852517117430_1300577200428118446_o.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51cjvsRcJvL.jpg" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -356,7 +355,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/2/25/Suits_temporada_7.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51ZYoWdRt4L.jpg" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -366,7 +365,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/17/10/11/17/34/4815573.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/41F7Udiwd%2BL._SX342_SY445_QL70_ML2_.jpg" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -376,7 +375,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://noticiasdatv.uol.com.br/media/_versions/recomenda/this-is-us-poster-season-4_fixed_recomenda_big.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/611fIw2AThL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -386,7 +385,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://cdn.fstatic.com/media/movies/covers/2021/02/THE-HANDMAIDS-TALE-Season-3-Key-Art.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://images.tcdn.com.br/img/img_prod/783226/quincas_borba_2516_1_20201215114418.png" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -396,7 +395,7 @@
                                     <div class="col-md-2">
                                         <div class="card">
                                             <div class="card-img">
-                                                <img alt="Can't load the image" src="https://br.web.img3.acsta.net/c_310_420/pictures/19/09/13/07/22/4076331.jpg" class="img-fluid carousel-img">
+                                                <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/41QZ-NGBhwL.jpg" class="img-fluid carousel-img">
                                             </div>
                                         </div>
                                     </div>
@@ -414,7 +413,7 @@
                 </div>
 
                 <div class="container text-left my-2">
-                  <h2>&nbsp;&nbsp;As mais assistidas</h2>
+                  <h2>&nbsp;&nbsp;Os mais lidos</h2>
                   <div class="row mx-auto my-auto justify-content-center">
                       <div id="recipeCarousel3" class="carousel slide c-3" data-bs-ride="c-3">
                           <div class="carousel-inner" role="listbox">
@@ -423,7 +422,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/18/08/20/23/44/0394911.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/81u+ljPVifL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -433,7 +432,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://lh3.googleusercontent.com/proxy/EvNz_P9Ga3QyZ1MaVId6NbBY3acFm91QMEAm7EetPtUxNGpg_tP0A8OTG2OQzOGPFrigeXzVZh0w7mX9vqxSrLpX6M3YdfH6" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/9788535911121_gg.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -443,7 +442,7 @@
                                 <div class="col-md-2">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img alt="Can't load the image" src="https://media.fstatic.com/okt_vFH3yDNK8jNp0MMmi8jCcC8=/290x478/smart/media/movies/covers/2018/12/series-of-unfortunate-events-key-art.jpg" class="img-fluid carousel-img">
+                                            <img alt="Can't load the image" src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/9788535914849_gg.jpg" class="img-fluid carousel-img">
                                         </div>
                                     </div>
                                 </div>
@@ -453,7 +452,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqmf2l5zdbro_bJtEtfwJVg3BRpT0wrG59lw&usqp=CAU" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/41w7YG48VkL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -463,7 +462,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/18/09/20/17/08/1922378.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://www.lojadobolseiro.com.br/uploads/images/2020/01/33-livro-a-queda-de-gondolin-j-r-r-tolkien-poster-33-1579485171.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -473,7 +472,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://img.olhardigital.com.br/wp-content/uploads/2021/03/loki-poster-novo-691x1024.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/41vhfFARJgL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -483,7 +482,7 @@
                                 <div class="col-md-2">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img alt="Can't load the image" src="https://lumiere-a.akamaihd.net/v1/images/bigred_ka_vert_brpo_cddc98da.jpeg" class="img-fluid carousel-img">
+                                            <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/61AjcNYviyL.jpg" class="img-fluid carousel-img">
                                         </div>
                                     </div>
                                 </div>
@@ -493,7 +492,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://upload.wikimedia.org/wikipedia/pt/d/db/How_to_Get_Away_with_Murder_Temporada_2_Poster.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51UgCA8CK+L.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -511,7 +510,7 @@
                 </div>
 
                 <div class="container text-left my-2">
-                  <h2>&nbsp;&nbsp;Animações</h2>
+                  <h2>&nbsp;&nbsp;Infantojuvenil</h2>
                   <div class="row mx-auto my-auto justify-content-center">
                       <div id="recipeCarousel4" class="carousel slide c-4" data-bs-ride="c-4">
                           <div class="carousel-inner" role="listbox">
@@ -520,7 +519,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="http://d2r9epyceweg5n.cloudfront.net/stores/892/720/products/os-simpsons-29-temporada1-1e2bb1a258ff8039e615661421376424-640-0.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/412YcnhZs1L.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -530,7 +529,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://static.wikia.nocookie.net/dublagem/images/6/64/Gravity_Falls.jpg/revision/latest?cb=20210313005121&path-prefix=pt-br" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://lojasaraiva.vteximg.com.br/arquivos/ids/12104831/1006786396.jpg?v=637142231647830000" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -540,7 +539,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://pipocanamadrugada.com.br/site/wp-content/uploads/2019/09/Desencanto-1.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/919dh4AX2hL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -550,7 +549,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://static.wixstatic.com/media/737e63_2222758b602f424ca50e1152cd0ed5d6~mv2.jpg/v1/fill/w_1000,h_1468,al_c,q_90,usm_0.66_1.00_0.01/737e63_2222758b602f424ca50e1152cd0ed5d6~mv2.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/41bEddLeVGL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -560,7 +559,7 @@
                                 <div class="col-md-2">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/14/04/22/09/03/422873.jpg" class="img-fluid carousel-img">
+                                            <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/51kCsUt1g-L._SX342_SY445_QL70_ML2_.jpg" class="img-fluid carousel-img">
                                         </div>
                                     </div>
                                 </div>
@@ -570,7 +569,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://static.wikia.nocookie.net/stevenuniverso/images/5/51/Steven_Universo_-_Imagem_promocional_EUA.jpg/revision/latest?cb=20140311183959&path-prefix=pt-br" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/81+9BBfCBYL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -580,21 +579,11 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://br.web.img3.acsta.net/pictures/21/01/11/15/25/3385672.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/91nWl2ttCKL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
                               </div>
-                              
-                              <div class="carousel-item ci-4">
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img alt="Can't load the image" src="https://media.fstatic.com/QaCAz6IovmA4sr7ka9gi1MdxzF4=/290x478/smart/media/movies/covers/2015/07/apenas-um-show-1a-temporada_t45103.jpg" class="img-fluid carousel-img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                           </div>
 
                           <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel4" role="button" data-bs-slide="prev">
@@ -608,7 +597,7 @@
                 </div>
 
                 <div class="container text-left my-2">
-                  <h2>&nbsp;&nbsp;Realities</h2>
+                  <h2>&nbsp;&nbsp;Pegue seu lencinho</h2>
                   <div class="row mx-auto my-auto justify-content-center">
                       <div id="recipeCarousel5" class="carousel slide c-5" data-bs-ride="c-5">
                           <div class="carousel-inner" role="listbox">
@@ -617,7 +606,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://i.imgur.com/dM6MkUF.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://lojasaraiva.vteximg.com.br/arquivos/ids/12105091/1004993142.jpg?v=637142232777270000" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -627,7 +616,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://static1.purebreak.com.br/articles/5/92/96/5/@/358648--the-circle-brasil-participantes-data-696x0-1.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51IC3l03D-L.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -637,7 +626,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/M/MV5BNjlmZjBkMzUtOGFmYy00Nzk0LTg0ZWUtNThiMGQzODAxOGUyXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51EArZi6jYL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -647,7 +636,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://i.pinimg.com/originals/6a/69/fd/6a69fd139289abe8c0ddab4dec42d84a.png" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/41+ABHyPmVL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -657,7 +646,7 @@
                                 <div class="col-md-2">
                                     <div class="card">
                                         <div class="card-img">
-                                            <img alt="Can't load the image" src="https://dg31sz3gwrwan.cloudfront.net/poster/360631/1356787-4-optimized.jpg" class="img-fluid carousel-img">
+                                            <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/61px0FW2wbL.jpg" class="img-fluid carousel-img">
                                         </div>
                                     </div>
                                 </div>
@@ -667,7 +656,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/M/MV5BMjI2NzY4NjQxM15BMl5BanBnXkFtZTgwMjEyNDIwNzE@._V1_.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/510dcwCpWlL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -677,7 +666,7 @@
                                   <div class="col-md-2">
                                       <div class="card">
                                           <div class="card-img">
-                                              <img alt="Can't load the image" src="https://m.media-amazon.com/images/I/51jgprpjKbL._AC_SY445_.jpg" class="img-fluid carousel-img">
+                                              <img alt="Can't load the image" src="https://images-na.ssl-images-amazon.com/images/I/817esPahlrL.jpg" class="img-fluid carousel-img">
                                           </div>
                                       </div>
                                   </div>
@@ -699,9 +688,16 @@
         </div>
         </div>
       </div>
+      <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright and Social-->
+        <div class="text-dark text-center p-3">
+            2021 - Carol Erthal - Eduardo Adame - Tiago Barradas - Rodrigo Pintucci - Vinicius Hedler
+        </div>
+        <!-- Copyright and Social-->
+      </footer>
     
     <!-- Importa os scripts do javascript utilizado para os carroseis e do boostrap 5 -->
-    <script src="teste.js"></script>
+    <script src="../js/multiple_carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     </body>

@@ -12,7 +12,7 @@
     <script src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
     <!-- Nosso CSS (SASS) -->
-    <link rel="stylesheet" href="../styles/perfil.css">
+    <link rel="stylesheet" href="../styles/profile.css">
     <title>Minha Prateleira de Mídias</title>
 </head>
 
@@ -20,10 +20,10 @@
 
 <body> 
     <!-- Modelo de Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container-fluid">
           <!-- Nome principal -->
-          <a class="navbar-brand" href="#">Prateleira de Mídias</a>
+          <a class="navbar-brand" href="../index.html">Prateleira de Mídias</a>
           <!-- Botão para acesso pelo celular -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,9 @@
           <!-- Barra de navegação -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- Página Ativa -->
-              <li class="nav-item">
-                <a class="nav-link"  href="../index.html">Home</a>
-              </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="pages/perfil.html">Minha Estante</a>
+                <a class="nav-link active" aria-current="page" href="#">Minha Estante</a>
               </li>
 
               <!-- Lista de Outras Páginas -->
@@ -47,12 +43,14 @@
                   Explorar
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Animes</a></li>
-                  <li><a class="dropdown-item" href="#">Filmes</a></li>
-                  <li><a class="dropdown-item" href="#">Livros</a></li>
-                  <li><a class="dropdown-item" href="#">Jogos</a></li>
+                  <li><a class="dropdown-item" href="animes.html">Animes</a></li>
+                  <li><a class="dropdown-item" href="movies.html">Filmes</a></li>
+                  <li><a class="dropdown-item" href="books.html">Livros</a></li>
+                  <li><a class="dropdown-item" href="games.html">Jogos</a></li>
+                  <li><a class="dropdown-item" href="series.html">Series</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Top 20</a></li>
+                  <li><a class="dropdown-item" href="../sobre.html">Sobre</a></li>
                 </ul>
 
               </li>
@@ -180,11 +178,7 @@
         <footer class="bg-light text-center text-lg-start">
           <!-- Copyright and Social-->
           <div class="text-dark text-center p-3">
-              2021 - Carol Erthal - Eduardo Adame - Tiago Barradas - Rodrigo Pintucci - Vinicius Hedler
-                <a href="https://github.com/reneroliveira" class="fa fa-lg fa-github"></a> 
-                <a href="https://www.linkedin.com/in/reneroliv/" class="fa fa-lg fa-linkedin"></a>      
-                <a href="mailto:rener.oliveira@fgv.edu.br" class="fa fa-lg fa-envelope"></a>
-          </div>
+              2021 - Carol Erthal - Eduardo Adame - Tiago Barradas - Rodrigo Pintucci - Vinicius Hedler          </div>
           <!-- Copyright and Social-->
         </footer>
 
