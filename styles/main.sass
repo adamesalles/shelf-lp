@@ -2,17 +2,29 @@ $bgcolor: lightblue
 $textcolor: black
 $fontsize: 18px
 
+$dark_purple: #0d0221
+$light_purple: #887bb0
+$gray_purple: #413651
+$white: snow
+$black: black
+$body_fontsize: 18px
+$body_font_family: 'Roboto'
+$wrapper_radius: 25px
+$card_bgcolor: #413651
+$card_textcolor: snow
+$img_card_radius:10px
+
 /* Use the variables */
 body
-    background-color: $bgcolor
-    color: $textcolor
+    background-color: $dark-purple
+    color: $black
     font-size: $fontsize
     padding-top: 60px
 
 @mixin wrapper
     padding: 15px
     margin-bottom: 15px
-    background-color: white
+    background-color: $light-purple
     h2
         font-size: 18px
 
@@ -27,6 +39,11 @@ body
 
 .article
     @include wrapper
+
+.dark-article
+    @include wrapper
+    background-color: $dark-purple
+    color: $white
 
 div
     &.article
