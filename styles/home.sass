@@ -1,3 +1,7 @@
+@use 'main'
+    
+/* Carrosel próprio do home, que é sempre de 100% */
+
 @media (max-width: 1000px)
     .carousel-inner .carousel-item > div 
         display: none
@@ -15,11 +19,11 @@
 @media (min-width: 200px) 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next
-        transform: translateX(16.5%)
+        transform: translateX(100%)
 
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev 
-        transform: translateX(-16.5%)
+        transform: translateX(-100%)
   
 
 
@@ -30,20 +34,9 @@
   
 .carousel-img
     width: 100%
-    border-radius: 10px
 
 .carousel-padding
     padding-top: 0.2vw
 
-
-
-.single-carousel
-    @media (min-width: 200px) 
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next
-        transform: translateX(0%)
-
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev 
-        transform: translateX(-0%)
-
+.carousel-header
+    color: main.$light_purple
