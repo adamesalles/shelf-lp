@@ -107,7 +107,6 @@ div.card p {
   white-space: normal;
 }
 
-
 #genres {
   width: 90%;
   display: block;
@@ -177,6 +176,9 @@ div.card p {
   background-color: #0d0221;
 }
 .profile h2 {
+  font-size: 18px;
+}
+.profile h2 {
   font-size: 30px;
   text-align: center;
 }
@@ -196,7 +198,7 @@ div.card p {
 }
 .rightside h2 {
   font-size: 18px;
-
+}
 
 #friends img {
   width: 100%;
