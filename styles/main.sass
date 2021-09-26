@@ -13,6 +13,11 @@ $wrapper_radius: 25px
 $card_bgcolor: #413651
 $card_textcolor: snow
 $img_card_radius:10px
+$huge: 72px
+$big: 48px
+$medium: 32px
+$small: 21px
+$tiny: 16px
 
 /* Use the variables */
 body
@@ -21,12 +26,15 @@ body
     font-size: $fontsize
     padding-top: 60px
 
+    h2
+        font-size: $medium
+    p
+        font-size: $tiny
+
 @mixin wrapper
     padding: 15px
     margin-bottom: 15px
     background-color: $light-purple
-    h2
-        font-size: 18px
 
 .main-center
     padding: 20px 10px
@@ -45,12 +53,7 @@ body
     background-color: $dark-purple
     color: $white
 
-div
-    &.article
-        h2
-            font-size: 24px
-      
-      
+div      
     &.card
         max-height: 11.6vw
         img
@@ -67,6 +70,28 @@ div
             font-size: 1vw
             margin-bottom: 0.3vw
 
+// Fonts
+
+.huge
+    font-size: $huge
+
+.big
+    font-size: $big
+    
+.medium
+    font-size: $medium
+
+.small
+    font-size: $small
+
+.tiny
+    font-size: $tiny
+
+.seriff
+    font-family: 'Roboto Slab', seriff
+
+.sans-seriff
+    font-family: 'Roboto Slab', sans-seriff
 
 
 .text-ellipsis-3
