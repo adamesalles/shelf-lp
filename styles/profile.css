@@ -85,46 +85,6 @@ div.card p {
   white-space: normal;
 }
 
-@media (max-width: 1000px) {
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 200px) {
-  .carousel-inner .carousel-item-end.active,
-.carousel-inner .carousel-item-next {
-    transform: translateX(16.5%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-.carousel-inner .carousel-item-prev {
-    transform: translateX(-16.5%);
-  }
-}
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
-}
-
-.carousel-img {
-  width: 100%;
-}
-
-.carousel-padding {
-  padding-top: 0.2vw;
-}
-
 #heatmap {
   width: 50%;
   display: block;
@@ -210,6 +170,15 @@ div.card p {
 }
 .profile p {
   font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.work-pic {
+  width: 80%;
+  border: 5px solid #555;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
 }
 
