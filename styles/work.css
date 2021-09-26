@@ -1,0 +1,140 @@
+/* Use the variables */
+body {
+  background-color: #0d0221;
+  color: black;
+  font-size: 18px;
+  padding-top: 60px;
+}
+
+.main-center {
+  padding: 20px 10px;
+}
+
+.main-right {
+  padding: 20px 10px;
+}
+
+.rightside {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+}
+.rightside h2 {
+  font-size: 18px;
+}
+
+.article {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+}
+.article h2 {
+  font-size: 18px;
+}
+
+.dark-article {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+  background-color: #0d0221;
+  color: snow;
+}
+.dark-article h2 {
+  font-size: 18px;
+}
+
+div.article h2 {
+  font-size: 24px;
+}
+div.card {
+  max-height: 11.6vw;
+}
+div.card img {
+  height: 11.5vw;
+  object-fit: cover;
+}
+div.card img.img-card {
+  width: 85%;
+}
+div.card h5 {
+  margin-left: -1.7vw;
+  margin-top: -0.5vw;
+  font-size: 1.5vw;
+}
+div.card p {
+  margin-left: -1.7vw;
+  font-size: 1vw;
+  margin-bottom: 0.3vw;
+}
+
+.text-ellipsis-3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.text-ellipsis-4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+#genres {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 20px;
+}
+
+.grid-row {
+  padding: 10px 10px;
+}
+
+.profile {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+}
+.profile h2 {
+  font-size: 18px;
+}
+.profile h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.profile h3 {
+  font-size: 24px;
+}
+.profile p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.work-pic {
+  padding: 15px 25px;
+}
+
+#friends img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#friends .row {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=work.css.map */
