@@ -1,6 +1,6 @@
 /* Use the variables */
 body {
-  background-color: lightblue;
+  background-color: #0d0221;
   color: black;
   font-size: 18px;
   padding-top: 60px;
@@ -17,9 +17,8 @@ body {
 .rightside {
   padding: 15px;
   margin-bottom: 15px;
-  background-color: white;
+  background-color: #887bb0;
 }
-
 .rightside h2 {
   font-size: 18px;
 }
@@ -27,37 +26,41 @@ body {
 .article {
   padding: 15px;
   margin-bottom: 15px;
-  background-color: white;
+  background-color: #887bb0;
+}
+.article h2 {
+  font-size: 18px;
 }
 
-.article h2 {
+.dark-article {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #887bb0;
+  background-color: #0d0221;
+  color: snow;
+}
+.dark-article h2 {
   font-size: 18px;
 }
 
 div.article h2 {
   font-size: 24px;
 }
-
 div.card {
   max-height: 11.6vw;
 }
-
 div.card img {
   height: 11.5vw;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 div.card img.img-card {
   width: 85%;
 }
-
 div.card h5 {
   margin-left: -1.7vw;
   margin-top: -0.5vw;
   font-size: 1.5vw;
 }
-
 div.card p {
   margin-left: -1.7vw;
   font-size: 1vw;
@@ -86,39 +89,33 @@ div.card p {
   .carousel-inner .carousel-item > div {
     display: none;
   }
+
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
 }
-
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 /* medium and up screens */
 @media (min-width: 200px) {
   .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    -webkit-transform: translateX(16.5%);
-            transform: translateX(16.5%);
+.carousel-inner .carousel-item-next {
+    transform: translateX(16.5%);
   }
+
   .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    -webkit-transform: translateX(-16.5%);
-            transform: translateX(-16.5%);
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-16.5%);
   }
 }
-
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 
 .carousel-img {
   width: 100%;
@@ -127,4 +124,5 @@ div.card p {
 .carousel-padding {
   padding-top: 0.2vw;
 }
+
 /*# sourceMappingURL=main.css.map */
