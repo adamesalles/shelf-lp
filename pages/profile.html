@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="//d3js.org/d3.v3.min.js"></script>
-    <script src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
     <!-- Nosso CSS (SASS) -->
     <link rel="stylesheet" href="../styles/profile.css">
     <!-- Carrega as fontes -->
@@ -77,7 +74,7 @@
         <div class="profile">
             <h2>@tio.rafa</h2>
             
-            <img id='prof-pic' class='d-flex' src="https://t2.os.ltmcdn.com/pt/posts/9/8/6/dedo_polegar_mexendo_sozinho_causas_689_600.jpg" alt="Tio Rafa Picture">
+            <img id='prof-pic' class='d-flex' src="http://www.adirferreira.com.br/wp-content/uploads/2010/10/thumbs_up.jpg" alt="Tio Rafa Picture">
             
             <ul class="list-group">
                 <li class="list-group-item"><span class="bi-person-circle"></span> Rafael de Pinho</li>
@@ -140,11 +137,7 @@
             </div>
 
             </div>
-            
-            <hr class="border-5 border-top">
-            <h3>Minha atividade</h3>
-            
-            <div id="heatmap"></div>
+
             
         </div>    
         </div>
@@ -157,19 +150,23 @@
 
                 <!-- anime -->
                 <input class="btn-check" type="checkbox" id="animeCheck" value="anime" checked>
-                <label class="btn btn-outline-primary" for="animeCheck">Animes</label>
+                <label class="btn btn-outline-light" for="animeCheck">Animes</label>
 
                 <!-- livro -->
                 <input class="btn-check" type="checkbox" id="livroCheck" value="livro" checked>
-                <label class="btn btn-outline-primary" for="livroCheck">Livros</label>
+                <label class="btn btn-outline-light" for="livroCheck">Livros</label>
 
                 <!-- filme -->
                 <input class="btn-check" type="checkbox" id="filmeCheck" value="filme" checked>
-                <label class="btn btn-outline-primary" for="filmeCheck">Filmes</label>
+                <label class="btn btn-outline-light" for="filmeCheck">Filmes</label>
 
                 <!-- jogo -->
                 <input class="btn-check" type="checkbox" id="jogoCheck" value="jogo" checked>
-                <label class="btn btn-outline-primary" for="jogoCheck">Jogos</label> 
+                <label class="btn btn-outline-light" for="jogoCheck">Jogos</label> 
+
+                <!-- serie -->
+                <input class="btn-check" type="checkbox" id="serieCheck" value="serie" checked>
+                <label class="btn btn-outline-light" for="serieCheck">Series</label> 
             </form>
             <!-- Será preenchido pelo JS. -->
             <div id="grid-container"></div>
@@ -186,108 +183,8 @@
           <!-- Copyright and Social-->
         </footer>
 
-
-<script>
-    // Por enquanto, estarei utilizando javascript dentro do HTML.
-
-    // HeatMap
-    const cal = new CalHeatMap();
-	  cal.init({
-        itemSelector: "#heatmap",
-        domain: "month",
-        subDomain: "x_day",
-        rowLimit: 7,
-        cellSize: 20,
-        subDomainTextFormat: "%d",
-        domainDynamicDimension: true,
-        range: 1,
-        displayLegend: false
-    })
-
-    // Encontrando o grid-container
-    let grid_container = document.getElementById('grid-container')
-
-    // Captando os botões de filtro
-    const filters = document.forms['filter'].querySelectorAll('input')
-
-    // Criando o array filtros
-    let filter = ['anime', 'filme', 'livro', 'jogo']
-
-
-    // Array de objetos com alguns works
-    let works = [{'name': 'Koe no Katachi', 'pic':'https://www.intoxianime.com/wp-content/uploads/2016/09/silent-voice-new-visual.png.jpg','type': 'anime'},{'name': 'The Joker', 'pic':'https://3jm17k957xm280ka42nsilm6-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/The-Joker-DVD-and-Blu-ray-cover-art.jpg','type': 'filme'}, {'name': 'Forza Horizon 4', 'pic':'https://store-images.s-microsoft.com/image/apps.36093.14339303838396367.725ab8dd-f8b7-4a29-a351-45ebd5d66edd.ba2a2523-7f32-4f92-a83d-26097b7b6ca1?mode=scale&q=90&h=300&w=200','type': 'jogo'}, {'name': 'Diário de um Banana', 'pic':'https://m.media-amazon.com/images/I/51NmVKrbhAL.jpg', 'type': 'livro'}]
-
-
-    // Faz com que cada botão, ao ser clicado, chame a função para alterar o filtro
-    filters.forEach((button) => button.addEventListener('click', () => change_filter(button)))
-
-
-    // Altera o filtro se baseando no botão apertado ou não
-    function change_filter(btn) {
-        let pos = filter.indexOf(btn.value)
-        if (pos == -1){
-            filter.push(btn.value)
-        } else{
-            filter.splice(pos, 1)
-        }
-        console.log(filter)
-        // Chama a função que (re)cria o grid
-        create_grid()
-    }
-    
-    // Contador para a quantidade de itens em uma coluna
-    let counter = 4;
-
-    // Função principal: cria o grid baseado nos filtros
-    function create_grid(){
-        // Destroi o antigo grid
-        while (grid_container.firstChild) {
-            grid_container.removeChild(grid_container.lastChild);
-        }
-        counter = 4
-        for (const work of works){
-            // Filtra os dados
-            if (!filter.includes(work['type'])){
-                continue;
-            }
-            // Verifica a necessidade de uma nova linha e a cria, se preciso
-            counter++
-            if (counter > 4){
-                grid_row = document.createElement('div')
-                grid_row.className = 'grid-row row'
-                counter = 0
-            }
-            // Criando elemento agrupador do item
-            let item = document.createElement('div')
-            item.className = 'grid-item col-sm-3'
-            // Criando imagem
-            let img = document.createElement('img')
-            img['src'] = work['pic']
-            img['alt'] = work['name']
-            // Criando camada de efeito
-            let hover = document.createElement('div')
-            hover.className = 'img-overlay'
-            // Criando título 
-            let title = document.createElement('div')
-            title.className = 'img-title'
-            title.innerText = work['name']
-            // Hover <- Title
-            hover.appendChild(title)
-            // Item <- Img
-            item.appendChild(img)
-            // Item <- Hover
-            item.appendChild(hover)
-            // Grid-Row <- Item
-            grid_row.appendChild(item)
-            // Grid-Container <- Grid-Row
-            grid_container.appendChild(grid_row)
-        }
-    }
-    // Chama a função ao entrar na página pela primeira vez.
-    create_grid()
-
-
-</script>
+<!-- Script para filtros -->
+<script src="../js/filtered_list.js"></script>
 
 <!-- Script do Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

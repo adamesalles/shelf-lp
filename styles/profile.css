@@ -107,13 +107,6 @@ div.card p {
   white-space: normal;
 }
 
-#heatmap {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
 
 #genres {
   width: 90%;
@@ -140,6 +133,7 @@ div.card p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .img-overlay {
@@ -151,6 +145,7 @@ div.card p {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -178,7 +173,8 @@ div.card p {
 .profile {
   padding: 15px;
   margin-bottom: 15px;
-  background-color: #887bb0;
+  color: white;
+  background-color: #0d0221;
 }
 .profile h2 {
   font-size: 30px;
@@ -192,18 +188,20 @@ div.card p {
   margin-bottom: 10px;
 }
 
-.work-pic {
-  width: 80%;
-  border: 5px solid #555;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+.rightside {
+  padding: 15px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: #0d0221;
 }
+.rightside h2 {
+  font-size: 18px;
+
 
 #friends img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
   display: block;
   margin-left: auto;
@@ -215,11 +213,11 @@ div.card p {
 
 #prof-pic {
   width: 80%;
-  border: 5px solid #555;
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=profile.css.map */
