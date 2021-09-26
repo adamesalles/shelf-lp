@@ -3,10 +3,13 @@
 @mixin wrapper
     padding: 15px
     margin-bottom: 15px
-    background-color: white
+    color: white
+    background-color: main.$dark-purple
     h2
         font-size: 18px
 
+body
+    color: white
 
 #genres
     width: 90%
@@ -15,15 +18,23 @@
     margin-right: auto
     margin-bottom: 10px
 
+.rightside
+    a
+        text-decoration: none
+        color: white
+    &:hover
+        color: white
+    &:visited
+        color: white
+
 .progress
     height: 20px
 
 .grid-row
     padding: 10px 10px
 
-
-.profile
-    @include main.wrapper
+.description
+    @include wrapper
     h2
         font-size: 30px
         text-align: center
@@ -33,11 +44,14 @@
         font-size: 14px
         margin-bottom: 10px
 
-.work-pic 
-    padding: 15px 25px
+.work-pic
+    width: 80%
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px
 
-
-#friends
+#series
     img
         width: 100%
         height: 100%

@@ -3,17 +3,10 @@
 @mixin wrapper
     padding: 15px
     margin-bottom: 15px
-    background-color: white
+    color: white
+    background-color: main.$dark-purple
     h2
         font-size: 18px
-
-// Minhas tentativas de fazer o heatmap responsivo
-#heatmap
-    width: 50%
-    display: block
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 10px
 
 #genres
     width: 90%
@@ -37,6 +30,7 @@
         width: 100%
         height: 100%
         object-fit: cover
+        border-radius: 10px
 
 .img-overlay
     position: absolute // Utiliza a posição do parent como referência
@@ -47,6 +41,7 @@
     background: rgba(0, 0, 0, 0.6)
     color: #fff
     display: flex
+    border-radius: 10px
     // Alinhamento
     flex-direction: column
     align-items: center
@@ -72,7 +67,7 @@
     font-size: vmin(3vh,1.7vw)
 
 .profile
-    @include main.wrapper
+    @include wrapper
     h2
         font-size: 30px
         text-align: center
@@ -82,19 +77,14 @@
         font-size: 14px
         margin-bottom: 10px
 
-.work-pic
-    width: 80%
-    border: 5px solid #555
-    display: block
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 10px
-
+.rightside
+    @include wrapper
 
 #friends
     img
         width: 100%
         height: 100%
+        border-radius: 50%
         object-fit: cover
         display: block
         margin-left: auto
@@ -104,9 +94,8 @@
 
 #prof-pic
     width: 80%
-    border: 5px solid #555
+    border-radius: 50%
     display: block
     margin-left: auto
     margin-right: auto
-    margin-bottom: 10px
-
+    margin-bottom: 20px
