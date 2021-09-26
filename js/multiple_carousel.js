@@ -101,3 +101,39 @@ items5.forEach((el) => {
 })
 // fim da função carrossel
 
+
+
+// carrosseis para o home, com mínimo de 1
+
+let items7 = document.querySelectorAll('.c-7 .ci-7')
+
+items7.forEach((el) => {
+    const minPerSlide = 1
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items7[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+
+
+let items8 = document.querySelectorAll('.c-8 .ci-8')
+
+items8.forEach((el) => {
+    const minPerSlide = 1
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items8[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
