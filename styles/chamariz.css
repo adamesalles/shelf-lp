@@ -105,4 +105,12 @@ input[type="checkbox"] {
   -webkit-filter: hue-rotate(48deg) brightness(1.1);
           filter: hue-rotate(48deg) brightness(1.1);
 }
-/*# sourceMappingURL=main.css.map */
+
+a.bold1 {
+  font-weight: bold;
+}
+
+div.pad {
+  padding-left: 20%;
+}
+/*# sourceMappingURL=chamariz.css.map */
