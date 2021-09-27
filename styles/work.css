@@ -3,7 +3,7 @@ body {
   background-color: #0d0221;
   color: black;
   font-size: 18px;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 body h2 {
   font-size: 32px;
@@ -105,6 +105,14 @@ div.card p {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   white-space: normal;
+}
+
+.round {
+  border-radius: 30px;
+}
+
+nav {
+  background-color: #887bb0;
 }
 
 body {

@@ -3,7 +3,7 @@ body {
   background-color: #0d0221;
   color: black;
   font-size: 18px;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 body h2 {
   font-size: 32px;
@@ -111,6 +111,10 @@ div.card p {
   border-radius: 30px;
 }
 
+nav {
+  background-color: #887bb0;
+}
+
 @media (max-width: 1000px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -170,10 +174,6 @@ div.card p {
   margin-right: -30px;
   margin-bottom: -15px;
   margin-left: 15px;
-}
-
-nav {
-  background-color: #887bb0;
 }
 
 .card {
