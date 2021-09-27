@@ -115,6 +115,15 @@ footer a:hover {
   color: snow;
 }
 
+.btn-outline-success {
+  color: #0d0221;
+  border-color: #0d0221;
+}
+.btn-outline-success:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
+}
+
 @media (max-width: 1000px) {
   .carousel-inner .carousel-item > div {
     display: none;

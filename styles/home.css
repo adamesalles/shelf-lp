@@ -1,10 +1,9 @@
 @charset "UTF-8";
-/* Use the variables */
 body {
   background-color: #0d0221;
   color: black;
   font-size: 18px;
-  padding-top: 75px;
+  padding-top: 125px;
 }
 body h2 {
   font-size: 32px;
@@ -13,30 +12,22 @@ body p {
   font-size: 16px;
 }
 
-.main-center {
+.dark-article, .article {
   padding: 20px 10px;
-}
-
-.main-right {
-  padding: 20px 10px;
-}
-
-.rightside {
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #887bb0;
 }
 
 .article {
   padding: 15px;
   margin-bottom: 15px;
   background-color: #887bb0;
+  border-radius: 10px;
 }
 
 .dark-article {
   padding: 15px;
   margin-bottom: 15px;
   background-color: #887bb0;
+  border-radius: 10px;
   background-color: #0d0221;
   color: snow;
 }
@@ -62,6 +53,14 @@ div.card p {
   margin-bottom: 0.3vw;
 }
 
+.card a {
+  color: black;
+  text-decoration: none;
+}
+.card a:hover {
+  color: #0d0221;
+}
+
 .huge {
   font-size: 72px;
 }
@@ -82,30 +81,28 @@ div.card p {
   font-size: 16px;
 }
 
+.sans-seriff {
+  font-family: "Roboto", sans-seriff;
+}
+
 .seriff {
   font-family: "Roboto Slab", seriff;
 }
 
-.sans-seriff {
-  font-family: "Roboto Slab", sans-seriff;
+.text-ellipsis-4, .text-ellipsis-3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 
 .text-ellipsis-3 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box !important;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  white-space: normal;
 }
 
 .text-ellipsis-4 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box !important;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  white-space: normal;
 }
 
 .round {
@@ -122,6 +119,18 @@ footer {
 footer a {
   color: black;
   text-decoration: none;
+}
+footer a:hover {
+  color: snow;
+}
+
+.btn-outline-success {
+  color: #0d0221;
+  border-color: #0d0221;
+}
+.btn-outline-success:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
 }
 
 /* Carrosel próprio do home, que é sempre de 100% */
@@ -178,15 +187,6 @@ footer a {
 
 .carousel-header {
   color: #FFF;
-}
-
-.btn-outline-success {
-  color: #0d0221;
-  border-color: #0d0221;
-}
-.btn-outline-success:hover {
-  background-color: #0d0221;
-  border-color: #0d0221;
 }
 
 /*# sourceMappingURL=home.css.map */

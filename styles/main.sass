@@ -19,7 +19,6 @@ $tiny: 16px
 $font-sans-seriff: 'Roboto', sans-seriff
 $font-seriff: 'Roboto Slab', seriff
 
-
 // Configuração mais geral do site
 body
     background-color: $dark_purple
@@ -55,7 +54,7 @@ body
     color: $white
 
 // Estilizacao geral de divs
-div      
+div
     &.card
         max-height: 11.6vw
         img
@@ -71,12 +70,17 @@ div
             margin-left: -1.7vw
             font-size: 1vw
             margin-bottom: 0.3vw
-
+.card
+    a
+        color: $black
+        text-decoration: none
+        &:hover
+            color: $dark-purple
 // Configuracao das fontes
 .huge
     font-size: $huge
 .big
-    font-size: $big   
+    font-size: $big
 .medium
     font-size: $medium
 .small
@@ -122,3 +126,10 @@ footer
         text-decoration: none
     a:hover
         color: $white
+
+.btn-outline-success
+    color: $dark-purple
+    border-color: $dark-purple
+    &:hover
+        background-color: $dark-purple
+        border-color: $dark-purple
