@@ -107,6 +107,10 @@ div.card p {
   white-space: normal;
 }
 
+.round {
+  border-radius: 30px;
+}
+
 #genres {
   width: 90%;
   display: block;
