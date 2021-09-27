@@ -167,6 +167,13 @@ div.card p {
 
 .tentacle {
   width: 100%;
+  margin-right: -30px;
+  margin-bottom: -15px;
+  margin-left: 15px;
+}
+
+nav {
+  background-color: #887bb0;
 }
 
 .card {
