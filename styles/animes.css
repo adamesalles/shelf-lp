@@ -106,6 +106,7 @@ nav {
 
 footer {
   background-color: #887bb0;
+  margin-top: 100px;
 }
 footer a {
   color: black;
@@ -113,6 +114,12 @@ footer a {
 }
 footer a:hover {
   color: snow;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
 }
 
 @media (max-width: 1000px) {
@@ -124,13 +131,6 @@ footer a:hover {
     display: block;
   }
 }
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-/* medium and up screens */
 @media (min-width: 200px) {
   .carousel-inner .carousel-item-end.active,
 .carousel-inner .carousel-item-next {
