@@ -11,7 +11,8 @@ body p {
   font-size: 16px;
 }
 
-.dark-article, .article {
+.dark-article,
+.article {
   padding: 20px 10px;
 }
 
@@ -88,7 +89,8 @@ div.card p {
   font-family: "Roboto Slab", seriff;
 }
 
-.text-ellipsis-4, .text-ellipsis-3 {
+.text-ellipsis-4,
+.text-ellipsis-3 {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box !important;
@@ -129,6 +131,10 @@ footer a:hover {
   border-color: #0d0221;
 }
 .btn-outline-success:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
+}
+.btn-outline-success:checked + .btn-check:checked {
   background-color: #0d0221;
   border-color: #0d0221;
 }

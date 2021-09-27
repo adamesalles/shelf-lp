@@ -128,9 +128,13 @@ footer
     a:hover
         color: $white
 
-.btn-outline-success
+.btn-outline-success, .btn-outline-dark
     color: $dark-purple
     border-color: $dark-purple
     &:hover
         background-color: $dark-purple
         border-color: $dark-purple
+
+.btn-check:checked + .btn-outline-success, .btn-check:checked + .btn-outline-dark
+    background-color: $dark-purple
+    border-color: $dark-purple
