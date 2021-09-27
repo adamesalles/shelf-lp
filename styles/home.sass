@@ -1,21 +1,23 @@
 @use 'main'
+// Carrosel próprio do home, que é sempre de 100%
+// Nao utiliza o _carousel.sass
 
-/* Carrosel próprio do home, que é sempre de 100% */
 
+// Display: flex
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev 
+    display: flex
+
+// Telas grandes
 @media (max-width: 1000px)
     .carousel-inner .carousel-item > div
         display: none
-
-    .carousel-inner .carousel-item > div:first-child
+    .carousel-inner .carousel-item > div:first-child 
         display: block
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev
-    display: flex
-
-/* medium and up screens */
-@media (min-width: 200px)
+// Telas medias
+@media (min-width: 200px) 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next
         transform: translateX(100%)
@@ -23,33 +25,28 @@
     .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev
         transform: translateX(-100%)
+  
+
+// Efeito de movimento
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start
     transform: translateX(0)
 
+
+// Estilizacao
+
 .carousel-img
     width: 100%
     border-radius: 10px
-
 .card
-    background-color: main.$light_purple
-
+    background-color: main.$light-purple
 .carousel-item
     .card
         border: none
-        background-color: main.$dark_purple
+        background-color: main.$dark-purple
         margin: 5px
-
 .carousel-padding
     padding-top: 0.2vw
-
 .carousel-header
-    color: #FFF
-
-.btn-outline-success
-    color: main.$dark_purple
-    border-color: main.$dark_purple
-    &:hover
-        background-color: main.$dark_purple
-        border-color: main.$dark_purple
+    color: main.$white

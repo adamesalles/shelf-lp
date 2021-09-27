@@ -1,16 +1,11 @@
 @use 'main'
 
-@mixin wrapper
-    padding: 15px
-    margin-bottom: 15px
-    color: white
-    background-color: main.$dark-purple
-    h2
-        font-size: 18px
 
+// Estilizacao geral
 body
     color: white
 
+// Espaco de generos. Unico
 #genres
     width: 90%
     display: block
@@ -18,7 +13,9 @@ body
     margin-right: auto
     margin-bottom: 10px
 
+// Parte da direita, que contem as criticas
 .rightside
+    @include main.wrapper
     a
         text-decoration: none
         color: white
@@ -27,14 +24,14 @@ body
     &:visited
         color: white
 
-.progress
-    height: 20px
-
 .grid-row
     padding: 10px 10px
 
+// Descricao do show, a esquerda
 .description
-    @include wrapper
+    @include main.wrapper
+    color: white
+    background-color: main.$dark-purple    
     h2
         font-size: 30px
         text-align: center
@@ -44,6 +41,7 @@ body
         font-size: 14px
         margin-bottom: 10px
 
+// Imagem da obra
 .work-pic
     width: 80%
     display: block
@@ -51,6 +49,7 @@ body
     margin-right: auto
     margin-bottom: 10px
 
+// Recomendacoes de series
 #series
     img
         width: 100%
