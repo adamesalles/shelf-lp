@@ -1,3 +1,5 @@
+@use 'main'
+
 $dark_purple: #0d0221
 $light_purple: #887bb0
 $gray_purple: #413651
@@ -10,73 +12,67 @@ $card_textcolor: snow
 $img_card_radius: 10px
 $textcolor: black
 $fontsize: 18px
-/* _(:.3 J L)_*/
-/* Use the variables */
+
+// Estilo geral da pagina
 body
-    background-color: $gray_purple
-    color: $textcolor
-    font-size: $fontsize
+    background-color: main.$gray_purple
+    color: main.$black
+    font-size: main.$small
+    padding-top: 0px
 
-@mixin wrapper
-    padding: 15px
-    margin-bottom: 15px
-    background-color: $light_purple
-    border-radius: $wrapper_radius
-h2
-    font-size: 18px
+// Padding padrão
+%default-padding
+    margin: 20px 10px
 
+// Container do forms de registro
+.register
+    @extend %default-padding
+    @include main.wrapper
+
+// Container das outras areas
 .article
-    height: 100%
+    @extend %default-padding
+    @include main.wrapper
+    height: 90%
 
-.main-left
-    padding: 20px 10px
-
-.main-center
-    padding: 20px 10px
-
-.main-right
-    padding: 20px 10px
-
-.rightside
-    @include wrapper
-
-.article
-    @include wrapper
-
+// Estilo de imagem
 .show-pic
     width: 90%
     display: block
     margin-left: auto
     margin-right: auto
 
+// align: right
 .direita
     align: right
 
-.container-fluid
-    background-color: $light_purple
-
-/* Trick */
-
+// Estilo do footer
 footer
-    background-color: $light_purple
+    background-color: main.$light_purple
     a
-        color: black
+        color: main.$black
         text-decoration: none
+
+// Estilo da nav
 nav
-    background-color: $light_purple
+    background-color: main.$light_purple
 
+
+// Botoes
 .btn-primary
-    background-color: $gray_purple
+    background-color: main.$gray_purple
     border: none
-
 .btn-primary:hover
-    background-color: $dark_purple
+    background-color: main.$dark_purple
 
+// Estilo do input
 input[type="checkbox"]
     filter: hue-rotate(48deg) brightness(1.1)
 
+// Estilo do link
 a.bold1
     font-weight: bold
 
+// just some padding
 div.pad
     padding-left: 20%
