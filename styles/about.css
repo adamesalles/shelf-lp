@@ -116,6 +116,15 @@ footer a:hover {
   color: snow;
 }
 
+.btn-outline-success {
+  color: #0d0221;
+  border-color: #0d0221;
+}
+.btn-outline-success:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
+}
+
 .team-img {
   width: 100%;
   border-radius: 50%;

@@ -40,10 +40,11 @@ h2 {
   border-radius: 10px;
 }
 
-.mostrar {
-  width: 525px;
-  height: 225px;
-  text-align: center;
+.show-pic {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .direita {

@@ -116,10 +116,13 @@ footer a:hover {
   color: snow;
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
+.btn-outline-success {
+  color: #0d0221;
+  border-color: #0d0221;
+}
+.btn-outline-success:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
 }
 
 @media (max-width: 1000px) {
