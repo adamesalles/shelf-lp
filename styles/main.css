@@ -138,4 +138,8 @@ footer a:hover {
   border-color: #0d0221;
 }
 
+.dropdown-item:focus {
+  background-color: #0d0221;
+}
+
 /*# sourceMappingURL=main.css.map */
