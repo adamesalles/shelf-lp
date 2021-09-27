@@ -124,11 +124,16 @@ footer a:hover {
   color: snow;
 }
 
-.btn-outline-success {
+.btn-outline-success, .btn-outline-dark {
   color: #0d0221;
   border-color: #0d0221;
 }
-.btn-outline-success:hover {
+.btn-outline-success:hover, .btn-outline-dark:hover {
+  background-color: #0d0221;
+  border-color: #0d0221;
+}
+
+.btn-check:checked + .btn-outline-success, .btn-check:checked + .btn-outline-dark {
   background-color: #0d0221;
   border-color: #0d0221;
 }
