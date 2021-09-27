@@ -138,6 +138,10 @@ footer a:hover {
   border-color: #0d0221;
 }
 
+.dropdown-item:focus {
+  background-color: #0d0221;
+}
+
 body {
   background-color: #413651;
   color: black;
