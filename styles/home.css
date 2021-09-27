@@ -151,6 +151,17 @@ nav {
 
 .carousel-img {
   width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #887bb0;
+}
+
+.carousel-item .card {
+  border: none;
+  background-color: #0d0221;
+  margin: 5px;
 }
 
 .carousel-padding {
@@ -158,7 +169,7 @@ nav {
 }
 
 .carousel-header {
-  color: #887bb0;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=home.css.map */
