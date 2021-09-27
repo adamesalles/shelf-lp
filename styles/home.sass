@@ -1,7 +1,7 @@
 @use 'main'
-    
 // Carrosel próprio do home, que é sempre de 100%
 // Nao utiliza o _carousel.sass
+
 
 // Display: flex
 .carousel-inner .carousel-item.active,
@@ -11,7 +11,7 @@
 
 // Telas grandes
 @media (max-width: 1000px)
-    .carousel-inner .carousel-item > div 
+    .carousel-inner .carousel-item > div
         display: none
     .carousel-inner .carousel-item > div:first-child 
         display: block
@@ -22,18 +22,20 @@
     .carousel-inner .carousel-item-next
         transform: translateX(100%)
 
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev 
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev
         transform: translateX(-100%)
   
 
 // Efeito de movimento
+
 .carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start 
+.carousel-inner .carousel-item-start
     transform: translateX(0)
 
 
 // Estilizacao
+
 .carousel-img
     width: 100%
     border-radius: 10px
