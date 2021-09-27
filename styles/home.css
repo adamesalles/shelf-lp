@@ -108,6 +108,14 @@ div.card p {
   white-space: normal;
 }
 
+.round {
+  border-radius: 30px;
+}
+
+nav {
+  background-color: #887bb0;
+}
+
 /* Carrosel próprio do home, que é sempre de 100% */
 @media (max-width: 1000px) {
   .carousel-inner .carousel-item > div {
