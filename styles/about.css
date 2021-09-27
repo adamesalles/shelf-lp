@@ -123,6 +123,7 @@ div.card p {
   background-color: #887bb0;
   color: black;
   border-radius: 20px;
+  margin-top: 4vh;
 }
 .team-card p {
   font-size: 21px;

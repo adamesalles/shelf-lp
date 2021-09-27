@@ -107,4 +107,8 @@ div.card p {
   white-space: normal;
 }
 
+.round {
+  border-radius: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
