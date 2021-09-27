@@ -10,6 +10,14 @@ h2 {
   font-size: 18px;
 }
 
+.article {
+  height: 100%;
+}
+
+.main-left {
+  padding: 20px 10px;
+}
+
 .main-center {
   padding: 20px 10px;
 }
@@ -42,50 +50,17 @@ h2 {
   align: right;
 }
 
-div.fillall {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-  position: absolute;
-  bottom: 0px;
-}
-
-body {
-  height: 100vh;
-  margin: 0;
-}
-
-header {
-  min-height: 50px;
-}
-
-footer {
-  min-height: 50px;
-}
-
-/* Trick */
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
+.container-fluid {
   background-color: #887bb0;
 }
 
-.antileft {
-  width: 244px;
-  height: 483px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* Trick */
+footer {
+  background-color: #887bb0;
+}
+footer a {
+  color: black;
+  text-decoration: none;
 }
 
 nav {
@@ -101,9 +76,8 @@ nav {
   background-color: #0d0221;
 }
 
-input[type="checkbox"] {
-  -webkit-filter: hue-rotate(48deg) brightness(1.1);
-          filter: hue-rotate(48deg) brightness(1.1);
+input[type=checkbox] {
+  filter: hue-rotate(48deg) brightness(1.1);
 }
 
 a.bold1 {
@@ -113,4 +87,5 @@ a.bold1 {
 div.pad {
   padding-left: 20%;
 }
+
 /*# sourceMappingURL=chamariz.css.map */
