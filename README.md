@@ -61,6 +61,7 @@ Partes funcionais:
 ## Organização do Trabalho
 
 No começo da semana, fizemos uma reunião e organizamos as primeiras páginas que cada um deveria desenvolver. A divisão ficou a seguinte:
+
 ---
 
  - Tiago e Carol: Montar o padrão para as páginas de exploração dos diversos tipos de mídia, e popular elas manualmente com exemplos
